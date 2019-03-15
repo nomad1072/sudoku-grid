@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>The Sudoku</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+        
+    </head>
+    <body>  
+        <div id="sudoku-container">
+            <div id="sudoku">
+
+            </div>
+        </div>
+        
+        <script>
+                let str = "<table border='1' rules='all'>";
+                for(let i = 0; i < 9; i++) {
+                    str += "<tr>";
+                    for(let j = 0; j < 9; j++) {
+                        str += `<td><input type='text' key=${j+1} maxlength='1' /></td>`;
+                    }
+                    str += "</tr>";
+                }
+                str += "</table>";
+                document.getElementById("sudoku").innerHTML = str;
+        </script>
+    </body>
+</html>

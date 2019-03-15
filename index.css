@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  div {
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .outer-grid {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    padding-bottom: 33.3%;
+    border: 1px solid gray;
+    background-color: #9cc;
+  }
+  .outer-square {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 45%;
+    height: 45%;
+    background-color: #ccc;
+    margin: 5%;
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .inner-grid {
+    width: 33.3%;
+    height: 33.3%;
+    border: 1px solid red;
+    display: table;
+  }
+  .inner-square {
+    line-height: 50%;
+    font-size: 50px;
+    font-weight: bold;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+#sudoku-container {
+    margin-left: 300px;
+    padding: 40px;
+}
+
+tr {
+    height: 30px;
+}
+td {
+    height: 80px;
+    width: 80px;
+    text-align: center;
+    font-size: 50px;
+}
+input {
+    height: 50px;
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+html {
+    background: rgba(145, 145, 185, 0.733);
+}
